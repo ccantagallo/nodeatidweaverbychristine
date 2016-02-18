@@ -1,0 +1,23 @@
+{
+  "name": "nodeatidweaverbychristine",
+  "version": "0.0.1",
+  "description": "Node",
+  "main": "index.js",
+  "scripts": {
+    "start":"node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccantagallo/nodeatidweaverbychristine.git"
+  },
+  "author": "Christine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccantagallo/nodeatidweaverbychristine/issues"
+  },
+  "homepage": "https://github.com/ccantagallo/nodeatidweaverbychristine#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
