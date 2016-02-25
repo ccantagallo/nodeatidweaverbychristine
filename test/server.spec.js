@@ -1,13 +1,28 @@
 var mocha = require("mocha");
 var chai = require("chai");
+var supertest = require("supertest");
 
 var expect = chai.expect;
 
-describe("when I run my first test", function(){
-    it("should expect true",function(){
+describe("when I start my server", function(){
+    
+    var app = require("../server");
+    var request = supertest.agent(app.listen());
+    
+    it("should return a status 200",function(done){
         
-        expect(true).equal(true);
+        request
+            .get("/")
+            .expect(200)
+            .end(done);
     });
     
+    it("should return a status node by christine at idweaver",function(done){
+        
+        request
+            .get("/")
+            .expect("Node at idweaver by Christine")
+            .end(done);
+    });
     
 });
