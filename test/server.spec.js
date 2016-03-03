@@ -17,12 +17,6 @@ describe("when I start my server", function(){
             .end(done);
     });
     
-    it("should return a status node by christine at idweaver",function(done){
-        
-        request
-            .get("/")
-            .expect("Node at idweaver by Christine")
-            .end(done);
-    });
+
     
 });
